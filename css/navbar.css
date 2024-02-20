@@ -1,0 +1,99 @@
+body {
+    background-image: var(--background-color);
+    background-attachment: fixed;
+    margin:0;
+}
+
+.opacity-zero {
+    opacity: 0;
+}
+
+.start-animation {
+    animation: start-animation-for-all-other-pages 1s ease forwards;
+    animation-delay: .1s;
+}
+
+.start-animation-for-input-text-div {
+    animation: start-animation-for-all-other-pages-input-text-div 1s ease;
+}
+
+@keyframes start-animation-for-all-other-pages {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    } 
+}
+
+@keyframes start-animation-for-all-other-pages-input-text-div {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: .6;
+    } 
+}
+
+
+nav {
+    position: fixed; 
+    background-color: black;
+    overflow: hidden;
+    top: 0%; 
+    width: 100%; 
+    z-index: 100; 
+}
+
+nav #nav-span {
+    float: right;
+}
+
+nav .nav-links {
+    display: block; 
+    float: left; 
+    color: var(--nav-link-color);
+    text-decoration: none;
+    font-size: var(--nav-links-size);
+    text-align: center;
+    transition: .3s ease;
+    padding: 15px 20px;
+    font-family: 'BasisGrotesqueArabicPro-Regular';
+}
+
+nav .nav-links:hover {
+    background-color: var(--nav-link-color);
+    color: black;
+    font-weight: bold;
+}
+
+nav .disabled-link {
+    background-color: black;
+    color: var(--nav-disabled-link-hover-color);
+}
+nav .disabled-link:hover {
+    background-color: black;
+    color: var(--nav-disabled-link-hover-color);
+    font-weight: normal;
+    cursor: pointer;
+}
+
+
+/* asdadsadadasdasd */
+
+.cim {
+    font-family: "MonumentExtended-Ultrabold";
+    text-align: center;
+    color: white;
+    font-size: var( --h1-font-size-except-mainpage);
+    margin-top: 60px;
+}
+
+.alcim {
+    font-family: "BasisGrotesqueArabicPro-Light";
+    text-align: center;
+    color: white;
+    font-size: var( --h2-font-size-except-mainpage);
+    margin-top: -20px;
+    margin-bottom: 20px;
+}

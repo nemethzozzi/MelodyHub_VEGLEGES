@@ -1,0 +1,526 @@
+@import "root-variables.css";
+
+@font-face {
+    font-family: "MonumentExtended-Regular";
+    src: url("../fonts/Monument-Extended/MonumentExtended-Regular.otf");
+}
+
+@font-face {
+    font-family: "MonumentExtended-Ultrabold";
+    src: url("../fonts/Monument-Extended/MonumentExtended-Ultrabold.otf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Black";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Black.ttf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Bold";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Bold.ttf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Medium";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Medium.ttf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Regular";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Light";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Light.ttf");
+}
+
+body {
+    background-image: var(--background-color);
+    margin:0;
+    padding: 0;
+}
+
+#cimek-section {
+    background-image: url("../images/crowd.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    margin: 0;
+    padding: 0;
+
+    filter: grayscale(.86) hue-rotate(290deg);
+       
+    height: 100vh;
+    width: 100%;
+    
+}
+
+#cim {
+    font-family: 'MonumentExtended-Ultrabold';
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin:0;
+    font-size: var(--h1-font-size-mainpage);
+    opacity: 0;
+    transition: .3s ease;
+
+    animation: start-cim1-animation 1.5s ease forwards;
+    animation-delay: .3s;
+}
+
+@keyframes start-cim1-animation {
+    from {
+        padding: 60px 0px 20px 0px;
+        opacity: 0;
+    } to {
+        padding: 90px 0px 20px 0px;
+        opacity: 1;
+    }
+}
+
+#motto {
+    font-family: 'BasisGrotesqueArabicPro-Light';
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: var(--h2-font-size-mainpage);
+    padding: 0px 15px;
+    opacity: 0;
+    transition: .3s ease;
+
+    animation: start-cim2-animation 1.5s ease forwards;
+    animation-delay: .5s;
+}
+
+@keyframes start-cim2-animation {
+    from {
+        margin: -20px 0px 0px 0px;
+        opacity: 0;
+    } to {
+        margin: 0px 0px 0px 0px;
+        opacity: 1;
+    }
+}
+
+#down-arrow {
+    height: 50px;
+    position: absolute;
+    bottom: 0%;
+    margin-bottom: 40px;
+    left: calc(50% - 25px);
+    opacity: 0;
+    
+}
+
+.down-arrow-start-animation {
+    animation: down-arrow-start-animation 1.5s ease forwards;
+    animation-delay: .7s;
+}
+
+@keyframes down-arrow-start-animation {
+    from {
+        margin-bottom: 60px;
+        opacity: 0;
+    }
+    to {
+        margin-bottom: 40px;
+        opacity: 1;
+    }
+}
+.down-arrow-infinite-animation-class {
+    opacity: 1;
+    animation: down-arrow-infinite-animation 2.2s ease infinite forwards;
+}
+
+@keyframes down-arrow-infinite-animation {
+    0% {
+        margin-bottom: 40px;
+        opacity: 1;
+    }
+    50% {
+        margin-bottom: 25px;
+        opacity: 1;
+    } 
+    100% {
+        margin-bottom: 40px;
+        opacity: 1;
+    }
+}
+
+nav {
+    position: fixed; 
+    background-color: black;
+    overflow: hidden; 
+    width: 100%; 
+    z-index: 100;
+    top: -7%;
+    opacity: 0;
+
+    animation: start-nav-animation 1.5s ease forwards;
+}
+
+@keyframes start-nav-animation {
+    from {
+        top: -7%;
+        opacity: 0;
+    } to {
+        top: 0%;
+        opacity: 1;
+    }
+}
+
+#nav-span {
+    float: right;
+}
+
+nav .nav-links {
+    display: block; 
+    float: left;
+    color:  var(--nav-link-color);
+    text-decoration: none;
+    font-size: var(--nav-links-size);
+    text-align: center;
+    transition: .3s ease;
+    padding: 15px 20px;
+    font-family: 'BasisGrotesqueArabicPro-Regular';
+}
+
+nav .nav-links:hover {
+    background-color: var(--nav-link-hover-color);
+    color: black;
+    font-weight: bold;
+}
+
+nav .disabled-link {
+    background-color: black;
+    color: var(--nav-disabled-link-hover-color);
+}
+nav .disabled-link:hover {
+    background-color: black;
+    color: var(--nav-disabled-link-hover-color);
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/*music-offer-section start*/
+#music-offer-h2 {
+    color: white;
+    text-align: center;
+    margin-top: 110px;
+    margin-bottom: 30px;
+    opacity: 0;
+    font-family: 'MonumentExtended-Regular';
+
+    animation: start-music-offers-h2 1.5s ease forwards;
+    animation-delay: .9s;
+}
+
+@keyframes start-music-offers-h2 {
+    from {
+        margin-top: 110px;
+        opacity: 0;
+        
+    } to {
+        margin-top: 120px;
+        opacity: 1;
+        
+    }
+}
+
+#music-offers-section {
+    display: flex;
+    flex-wrap: wrap; /*megtöri a sort, ha nincs elegendő helye*/
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+
+    width: 85%;
+    margin: 0 auto;
+    margin: -20px 0px 50px 0px;
+    margin-bottom: 50px;
+    opacity: 0;
+    transition: .3s ease;
+
+    animation: start-music-offers-section-animation 1.5s ease forwards;
+    animation-delay: 1.1s;
+
+}
+
+@keyframes start-music-offers-section-animation {
+    from {
+        margin: 0 auto;
+        margin-top: -20px;
+        margin-bottom: 50px;
+        
+        opacity: 0;
+        
+    } to {
+        margin: 0 auto;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        opacity: 1;
+        
+    }
+}
+
+.music-div {
+    height: var(--card-height);
+    width: var(--card-width);
+    background-image: var(--card-background-color-gradient);
+    border-radius: 15px;
+}
+
+.music-div-author-image {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.music-div-author {
+    font-size: var(--author-font-size);
+    color: white;
+    font-family: 'BasisGrotesqueArabicPro-Regular';
+    font-weight: normal;
+    text-align: center;
+    margin-top: 13px;
+}
+
+.music-div-music-title {
+    font-size: var(--title-font-size);
+    color: white;
+    font-family: 'BasisGrotesqueArabicPro-Regular';
+    font-weight: normal;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.music-div-music-length {
+    font-size: var(--length-font-size);
+    color: white;
+    font-family: 'BasisGrotesqueArabicPro-Regular';
+    font-weight: normal;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 12px;
+}
+
+.music-div-music-button {
+    height: 45px;
+    display: block;
+    margin: 0 auto;
+}
+
+.music-div-music-button:hover {
+    cursor: pointer;
+}
+
+/*music-offer-section end*/
+
+/*logout-link*/
+#logout-link {
+    position: fixed;
+    margin-top: 100px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*responsive start*/
+
+
+/* desktop, large screen */
+@media screen and (max-width: 1280px) {
+
+    /*mainpage start*/
+
+    #cim {
+        font-family: 'MonumentExtended-Ultrabold';
+        text-align: center;
+        color: white;
+        margin:0;
+        font-size: 6.2em;
+        opacity: 0;
+        transition: .3s ease;
+    
+        animation: start-cim1-animation 1.5s ease forwards;
+        animation-delay: .3s;
+    }
+
+    #motto {
+        font-family: 'BasisGrotesqueArabicPro-Light';
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 2.7em;
+        padding: 0px 15px;
+        opacity: 0;
+        transition: .3s ease;
+    
+        animation: start-cim2-animation 1.5s ease forwards;
+        animation-delay: .5s;
+    }
+
+    /*mainpage end*/
+
+}
+
+
+
+
+
+
+
+/* small screen, laptops */
+@media screen and (max-width: 1024px) {
+
+    #cim {
+        font-family: 'MonumentExtended-Ultrabold';
+        text-align: center;
+        color: white;
+        margin:0;
+        font-size: 5.5em;
+        opacity: 0;
+        transition: .3s ease;
+    
+        animation: start-cim1-animation 1.5s ease forwards;
+        animation-delay: .3s;
+    }
+
+    #motto {
+        font-family: 'BasisGrotesqueArabicPro-Light';
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 2em;
+        padding: 0px 15px;
+        opacity: 0;
+        transition: .3s ease;
+    
+        animation: start-cim2-animation 1.5s ease forwards;
+        animation-delay: .5s;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* tablets */
+@media screen and (max-width: 768px) {
+
+    #cim {
+        font-family: 'MonumentExtended-Ultrabold';
+        text-align: center;
+        color: white;
+        margin:0;
+        font-size: 4.4em;
+        opacity: 0;
+        transition: .3s ease;
+    
+        animation: start-cim1-animation 1.5s ease forwards;
+        animation-delay: .3s;
+    }
+
+    #motto {
+        font-family: 'BasisGrotesqueArabicPro-Light';
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 1.5em;
+        padding: 0px 15px;
+        opacity: 0;
+        transition: .3s ease;
+    
+        animation: start-cim2-animation 1.5s ease forwards;
+        animation-delay: .5s;
+    }
+    
+    nav .nav-links {
+        display: block; 
+        float: left;
+        color:  var(--nav-link-color);
+        text-decoration: none;
+        font-size: 1em;
+        text-align: center;
+        transition: .3s ease;
+        padding: 12px 17px;
+        font-family: 'BasisGrotesqueArabicPro-Regular';
+    }
+    nav .disabled-link {
+        background-color: black;
+        color: var(--nav-disabled-link-hover-color);
+    }
+    nav .disabled-link:hover {
+        background-color: black;
+        color: var(--nav-disabled-link-hover-color);
+        font-weight: normal;
+        cursor: pointer;
+    }
+    
+    
+
+    .music-div {
+        height: 250px; /*base: 300px*/
+        width: 200px; /*base: 250px*/
+        background-image: var(--card-background-color-gradient);
+        border-radius: 15px;
+    }
+    
+    .music-div-author-image {
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        margin-top: 13px;
+        height: 90px;
+    }
+    
+    .music-div-author {
+        font-size: 1.1em;
+        color: white;
+        font-family: 'BasisGrotesqueArabicPro-Regular';
+        font-weight: normal;
+        text-align: center;
+        margin-top: 13px;
+    }
+    
+    .music-div-music-title {
+        font-size: 1em;
+        color: white;
+        font-family: 'BasisGrotesqueArabicPro-Regular';
+        font-weight: normal;
+        text-align: center;
+        margin-top: -10px;
+    }
+    
+    .music-div-music-length {
+        font-size: .95em;
+        color: white;
+        font-family: 'BasisGrotesqueArabicPro-Regular';
+        font-weight: normal;
+        text-align: center;
+        margin-top: -10px;
+        margin-bottom: 12px;
+    }
+    
+    .music-div-music-button {
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+
+/*responsive end*/

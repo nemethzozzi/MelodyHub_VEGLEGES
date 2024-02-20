@@ -1,0 +1,247 @@
+@import "root-variables.css";
+
+@font-face {
+    font-family: "MonumentExtended-Regular";
+    src: url("../fonts/Monument-Extended/MonumentExtended-Regular.otf");
+}
+
+@font-face {
+    font-family: "MonumentExtended-Ultrabold";
+    src: url("../fonts/Monument-Extended/MonumentExtended-Ultrabold.otf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Black";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Black.ttf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Bold";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Bold.ttf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Medium";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Medium.ttf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Regular";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Light";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Light.ttf");
+}
+
+body {
+    background-image: var(--background-color);
+    background-attachment: fixed;
+    margin:0;
+}
+
+.opacity-zero {
+    opacity: 0;
+}
+
+.start-animation {
+    animation: start-animation-for-all-other-pages 1s ease forwards;
+    animation-delay: .1s;
+}
+
+.start-animation-for-input-text-div {
+    animation: start-animation-for-all-other-pages-input-text-div 1s ease;
+}
+
+@keyframes start-animation-for-all-other-pages {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    } 
+}
+
+@keyframes start-animation-for-all-other-pages-input-text-div {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: .6;
+    } 
+}
+
+/*navbar start*/
+nav {
+    position: fixed; 
+    background-color: black;
+    overflow: hidden;
+    top: 0%; 
+    width: 100%; 
+    z-index: 100; 
+}
+
+nav #nav-span {
+    float: right;
+}
+
+nav .nav-links {
+    display: block; 
+    float: left; 
+    color: var(--nav-link-color);
+    text-decoration: none;
+    font-size: var(--nav-links-size);
+    text-align: center;
+    transition: .3s ease;
+    padding: 15px 20px;
+    font-family: 'BasisGrotesqueArabicPro-Regular';
+}
+
+nav .nav-links:hover {
+    background-color: var(--nav-link-color);
+    color: black;
+    font-weight: bold;
+}
+
+nav .disabled-link {
+    background-color: black;
+    color: var(--nav-disabled-link-hover-color);
+}
+nav .disabled-link:hover {
+    background-color: black;
+    color: var(--nav-disabled-link-hover-color);
+    font-weight: normal;
+    cursor: pointer;
+}
+/*navbar end*/
+
+
+
+/*cim, alcim start*/
+.cim {
+    font-family: "MonumentExtended-Ultrabold";
+    text-align: center;
+    color: white;
+    font-size: var( --h1-font-size-except-mainpage);
+    margin-top: 60px;
+}
+
+.alcim {
+    font-family: "BasisGrotesqueArabicPro-Light";
+    text-align: center;
+    color: white;
+    font-size: var( --h2-font-size-except-mainpage);
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+/*cim, alcim end*/
+
+
+/*aboutus start*/
+#about-us-main {
+    text-align: center;
+}
+  
+.aboutus-column {
+    text-align: left;
+    display: inline-block;
+    width: 40%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    transition: .3s ease;
+    
+  }
+  
+  .card {
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    margin: 8px;
+    background-color: var(--about-us-card-color);
+  }
+  
+  #ourteam{
+    font-family:"MonumentExtended-Ultrabold";
+    text-align: center;
+    font-size: 1.6em;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  .aboutus-section {
+    text-align: center;
+    color: black;
+    font-family:"MonumentExtended-Ultrabold";
+  }
+
+  #aboutus-section-h1 {
+    font-size: 1.4em;
+    margin-top: 25px;
+    color: white;
+  }
+  #introduction {
+    color: rgb(173, 173, 173);
+    padding: 0px 12px;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .job {
+    color: rgb(180, 180, 180);
+    font-family:"MonumentExtended-Regular";
+    text-align: center;
+  }
+  
+  .contact-button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-family:"MonumentExtended-Regular";
+    transition: .3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #212121;
+  }
+
+  .adatok-p {
+    font-family: 'BasisGrotesqueArabicPro-Regular';
+    color: white;
+  }
+
+  .nev {
+    font-family: "MonumentExtended-Regular";
+    text-align: center;
+    margin-bottom: 0;
+    color: white;
+  }
+
+  .kepek-rolunk {
+    padding-top: 10px;
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    clip-path: circle(30%);
+    transition: .8s ease;
+  }
+  /* .kepek-rolunk:hover {
+    clip-path: circle(100%);
+    filter: brightness(100%) grayscale(0);
+  } */
+  /*aboutus end*/
+

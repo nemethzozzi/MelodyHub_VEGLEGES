@@ -1,0 +1,7 @@
+a:3:{s:12:"liked-genres";s:11:"pop, hiphop";s:14:"message-author";s:16:"nemesko.szabolcs";s:12:"message-text";s:10:"Sziasztok!";}
+a:3:{s:12:"liked-genres";s:11:"pop, hiphop";s:14:"message-author";s:16:"nemesko.szabolcs";s:12:"message-text";s:34:"Csak egy felhasználó van még :(";}
+a:3:{s:12:"liked-genres";s:11:"pop, hiphop";s:14:"message-author";s:16:"nemesko.szabolcs";s:12:"message-text";s:17:"Már több is van";}
+a:3:{s:12:"liked-genres";s:11:"pop, hiphop";s:14:"message-author";s:16:"nemesko.szabolcs";s:12:"message-text";s:13:"Remélem megy";}
+a:3:{s:12:"liked-genres";s:11:"pop, hiphop";s:14:"message-author";s:16:"nemesko.szabolcs";s:12:"message-text";s:8:"Remélem";}
+a:3:{s:12:"liked-genres";s:11:"pop, hiphop";s:14:"message-author";s:16:"nemesko.szabolcs";s:12:"message-text";s:4:"Megy";}
+a:3:{s:12:"liked-genres";s:11:"pop, hiphop";s:14:"message-author";s:16:"nemesko.szabolcs";s:12:"message-text";s:9:"Sziasztok";}

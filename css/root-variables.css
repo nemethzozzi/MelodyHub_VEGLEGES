@@ -1,0 +1,46 @@
+:root {
+    /*nav values*/
+    --nav-links-size: 1.25em;
+    --nav-disabled-link-hover-color: rgb(158, 158, 158);
+    --background-color: linear-gradient(135deg, rgba(40,40,40,1) 0%, rgba(13,13,13,1) 100%); /*###############*/
+    --nav-link-color: white;
+    --nav-link-hover-color: white;
+
+    /*h1, h2*/
+    --h1-font-size-except-mainpage: 2.3em;
+    --h2-font-size-except-mainpage: 1.2em;
+    --h1-font-size-mainpage: 7em;
+    --h2-font-size-mainpage: 3.5em;
+
+    /* regisztracio es a bejelentkezes button ilyen lesz :hover-nél */
+    --signin-login-button-background-color: rgb(68, 68, 68);
+    --signin-login-input-text-color: rgb(210, 210, 210);
+    --goto-reg-link-color-hover: rgb(180, 180, 180);
+    --signin-login-button-color: rgb(50, 50, 50);
+
+    /*music offer variables*/
+    --card-width: 250px;
+    --card-height: 300px;
+    --card-background-color: rgb(47, 47, 47);
+    --card-background-color-gradient: linear-gradient(135deg, rgba(54,54,54,1) 0%, rgba(34,34,34,1) 100%);
+    --author-font-size: 1.3em;
+    --title-font-size: 1.1em;
+    --length-font-size: 1.05em;
+
+    /*about-us*/
+    --about-us-card-color: rgb(47, 47, 47);
+
+    /*music*/
+    --genres-select-color: rgb(68, 68, 68);
+    --genres-select-option-text-color: rgb(210, 210, 210);
+
+    /*forum variables*/
+    --input-text-div-color: rgb(65, 65, 65);
+    --input-textarea-color: rgb(45, 45, 45);
+    --post-button-color: rgb(45, 45, 45);
+    --forum-container-color: rgb(43, 43, 43);
+    
+    /*signin*/
+    --input-bemutatkozo-color: rgb(42, 42, 42);
+
+}
