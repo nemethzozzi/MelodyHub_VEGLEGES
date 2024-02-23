@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MelodyHub | Zenék</title>
   <link rel="icon" href="../images/icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="../css/others.css">
-  <link rel="stylesheet" href="../css/scrollbar.css">
+  <link rel="stylesheet" type="text/css" href="../css/music.css">
+  <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="../css/scrollbar.css">
   <script src="../js/jquery-3.4.1.min.js"></script>
     <script>
         function changeLinks() {
@@ -67,15 +68,12 @@
 
     <img src="../images/musical-note-icon.svg" alt="" id="musical-note-icon" class="start-animation-for-for-musical-note">
 
-    <section id="music-section" class="opacity-zero start-animation">
-
-    </section>
+    <section id="music-section" class="opacity-zero start-animation"></section>
 
     <script src="../js/music-setup.js"></script>
 
     <?php
         include "login_operator.php";
-        session_start();
         if(isset($_SESSION['session-user'])) {
             echo '<script>changeLinks()</script>';
             echo '<script>setToActiveLinks()</script>';

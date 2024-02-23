@@ -1,3 +1,10 @@
+<?php
+if (!isset($_SESSION)) {
+    session_start();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -6,8 +13,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MelodyHub | Fórum</title>
   <link rel="icon" href="../images/icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="../css/others.css">
-  <link rel="stylesheet" href="../css/scrollbar.css">
+  <link rel="stylesheet" type="text/css" href="../css/forum.css">
+  <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="../css/scrollbar.css">
   <script src="../js/jquery-3.4.1.min.js"></script>
   <script>
         function changeLinks() {
@@ -36,10 +44,10 @@
     <a href="music.php" class="nav-links">Zenék</a>
     <a class="nav-links disabled-link">Fórum</a>
     <span id="nav-span">
-                <a href="about_us.php" class="nav-links">Rólunk</a>
-                <a href="login.php" class="nav-links" id="login-id">Jelentkezz be</a>
-                <a href="signin.php" class="nav-links" id="signin-id">Regisztrálj</a>
-            </span>
+      <a href="about_us.php" class="nav-links">Rólunk</a>
+      <a href="login.php" class="nav-links" id="login-id">Jelentkezz be</a>
+      <a href="signin.php" class="nav-links" id="signin-id">Regisztrálj</a>
+    </span>
   </nav>
 </header>
 
@@ -50,12 +58,18 @@
   Share your love for music and connect with the community.
 </h2>
 
+<div id="input-text-div" class="opacity-zero start-animation">
+  <form action="forum_operator.php" method="post">
+    <textarea id="input-text" name="input-text" placeholder="Mi jár a fejedben?" maxlength="250"></textarea>
+    <input type="submit" id="post-button" name="post-button" value="Közzététel" onclick="clearPosts()">
+  </form>
+</div>
+
 <div id="wrapper">
 
   <?php
         include "login_operator.php";
         include "message_operators.php";
-        session_start();
         if(isset($_SESSION['session-user'])) {
             echo '<script>changeLinks()</script>';
             echo '<script>setToActiveLinks()</script>';
@@ -78,12 +92,7 @@
   
   </div>
 
-  <div id="input-text-div" class="opacity-zero start-animation-for-input-text-div">
-      <form action="forum_operator.php" method="post">
-        <input type="submit" id="post-button" name="post-button" value="Közzététel" onclick="clearPosts()">
-        <textarea id="input-text" name="input-text" placeholder="Mi jár a fejedben?" maxlength="250"></textarea>	 
-      </form>
-	</div>
+
 
   <!-- valamiért a css nem működik -->
   <script>

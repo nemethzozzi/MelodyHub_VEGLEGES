@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MelodyHub | Regisztráció</title>
     <link rel="icon" href="../images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/others.css">
-    <link rel="stylesheet" href="../css/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/signin.css">
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/scrollbar.css">
     <script src="../js/jquery-3.4.1.min.js"></script>
     <script>
         function changeLinks() {
@@ -50,28 +51,41 @@
     <form action="signin_operator.php" method="POST" class="opacity-zero start-animation" enctype="multipart/form-data">
         <table id="signin-form-table">
             <caption id="signin-form-table-caption">Regisztráció</caption>
-            <tr class="signin-form-table-tr">
-                <td class="signin-form-table-td">*Vezetéknév:</td>
-                <td class="signin-form-table-td">
-                    <input type="text" name="vezeteknev" id="vezeteknev" size="30" maxlength="30" required>
+            <tr>
+                <td>
+                <span id="kotelezo-kitolteni">*: kötelező kitölteni</span>
                 </td>
             </tr>
             <tr class="signin-form-table-tr">
-                <td class="signin-form-table-td">*Keresztnév:</td>
                 <td class="signin-form-table-td">
-                    <input type="text" name="keresztnev" id="keresztnev" size="30" maxlength="30" required>
+                    Vezetéknév:<span id="csillag">*</span>
+                </td>
+                <td class="signin-form-table-td">
+                    <input type="text" name="vezeteknev" id="vezeteknev" size="40" maxlength="40" required>
                 </td>
             </tr>
             <tr class="signin-form-table-tr">
-                <td class="signin-form-table-td">*Születési dátum:</td>
+                <td class="signin-form-table-td">
+                    Keresztnév:<span id="csillag">*</span>
+                </td>
+                <td class="signin-form-table-td">
+                    <input type="text" name="keresztnev" id="keresztnev" size="40" maxlength="40" required>
+                </td>
+            </tr>
+            <tr class="signin-form-table-tr">
+                <td class="signin-form-table-td">
+                    Születési dátum:<span id="csillag">*</span>
+                </td>
                 <td class="signin-form-table-td signin-form-table-td-date">
-                    <input type="date" name="szuletesi-datum" id="szuletesi-datum" size="30"required>
+                    <input type="date" name="szuletesi-datum" id="szuletesi-datum" size="40"required>
                 </td>
             </tr>
             <tr class="signin-form-table-tr">
-                <td class="signin-form-table-td">*Felhasználónév:</td>
                 <td class="signin-form-table-td">
-                    <input type="text" name="felhnev" id="felhnev" size="30" maxlength="30" required>
+                    Felhasználónév:<span id="csillag">*</span>
+                </td>
+                <td class="signin-form-table-td">
+                    <input type="text" name="felhnev" id="felhnev" size="40" maxlength="40" required>
                 </td>
             </tr>
             <tr class="signin-form-table-tr">
@@ -98,21 +112,27 @@
                 </td>
             </tr>
             <tr class="signin-form-table-tr">
-                <td class="signin-form-table-td">*E-mail:</td>
                 <td class="signin-form-table-td">
-                    <input type="email" name="email" id="email" size="30" maxlength="50" required>
+                    E-mail:<span id="csillag">*</span>
+                </td>
+                <td class="signin-form-table-td">
+                    <input type="email" name="email" id="email" size="40" maxlength="50" required>
                 </td>
             </tr>
             <tr class="signin-form-table-tr">
-                <td class="signin-form-table-td">*Jelszó:</td>
                 <td class="signin-form-table-td">
-                    <input type="password" name="jelszo" id="jelszo" size="30" maxlength="30" required>
+                    Jelszó(minimum 8 karakter):<span id="csillag">*</span>
+                </td>
+                <td class="signin-form-table-td">
+                    <input type="password" name="jelszo" id="jelszo" size="40" maxlength="40" required>
                 </td>
             </tr>
             <tr class="signin-form-table-tr">
-                <td class="signin-form-table-td">*Jelszó ismét:</td>
                 <td class="signin-form-table-td">
-                    <input type="password" name="jelszo-ismet" id="jelszo-ismet" size="30" maxlength="30" required>
+                    Jelszó ismét:<span id="csillag">*</span>
+                </td>
+                <td class="signin-form-table-td">
+                    <input type="password" name="jelszo-ismet" id="jelszo-ismet" size="40" maxlength="40" required>
                 </td>
             </tr>
 
@@ -130,19 +150,21 @@
                 <textarea id="bemutatkozo-szoveg"name="bemutatkozo-szoveg" placeholder="Bemutatkozó szöveg" maxlength="200" ></textarea>
                 </td>
             </tr>
-
-            <tr class="signin-form-tabla-tr">
-                <td class="signin-form-table-td">
-                <span>* kötelező megadni</span>
+            <tr>
+                <td>
+                    <input type="submit" value="Regisztrál" name="regisztracio-button" id="regisztracio-button">
+                </td>
+                <td>
+                    <p id="belepes-kerdes-p"> Van már fiókod?
+                        <a href="login.php" id="goto-log-link">Belépek</a>
+                    </p>
                 </td>
             </tr>
 
-
-
-
         </table>
 
-        <input type="submit" value="Regisztrál" name="regisztracio-button" id="regisztracio-button">
+
+
         <input type="reset" value="Visszaállít kezdőértékekre" id="reset-button">
 
 

@@ -1,7 +1,7 @@
 <?php
+session_start();
 include "message_operators.php";
 include "user_operators.php";
-session_start();
 
 if(isset($_SESSION['session-user'])) {
 

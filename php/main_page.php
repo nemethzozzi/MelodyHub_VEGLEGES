@@ -85,7 +85,6 @@
         
         <?php
         include "login_operator.php";
-        session_start();
         if(isset($_SESSION['session-user'])) {
             echo '<script>changeLinks()</script>';
             echo '<script>setToActiveLinks()</script>';

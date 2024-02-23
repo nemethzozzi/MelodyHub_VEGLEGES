@@ -1,41 +1,4 @@
-body {
-    background-image: var(--background-color);
-    background-attachment: fixed;
-    margin:0;
-}
-
-.opacity-zero {
-    opacity: 0;
-}
-
-.start-animation {
-    animation: start-animation-for-all-other-pages 1s ease forwards;
-    animation-delay: .1s;
-}
-
-.start-animation-for-input-text-div {
-    animation: start-animation-for-all-other-pages-input-text-div 1s ease;
-}
-
-@keyframes start-animation-for-all-other-pages {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    } 
-}
-
-@keyframes start-animation-for-all-other-pages-input-text-div {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: .6;
-    } 
-}
-
-
+/*navbar start*/
 nav {
     position: fixed; 
     background-color: black;
@@ -52,7 +15,7 @@ nav #nav-span {
 nav .nav-links {
     display: block; 
     float: left; 
-    color: var(--nav-link-color);
+    color: white;
     text-decoration: none;
     font-size: var(--nav-links-size);
     text-align: center;
@@ -62,7 +25,7 @@ nav .nav-links {
 }
 
 nav .nav-links:hover {
-    background-color: var(--nav-link-color);
+    background-color: var(--green-color);
     color: black;
     font-weight: bold;
 }
@@ -77,10 +40,11 @@ nav .disabled-link:hover {
     font-weight: normal;
     cursor: pointer;
 }
+/*navbar end*/
 
 
-/* asdadsadadasdasd */
 
+/*cim, alcim start*/
 .cim {
     font-family: "MonumentExtended-Ultrabold";
     text-align: center;
@@ -97,3 +61,5 @@ nav .disabled-link:hover {
     margin-top: -20px;
     margin-bottom: 20px;
 }
+/*cim, alcim end*/
+  

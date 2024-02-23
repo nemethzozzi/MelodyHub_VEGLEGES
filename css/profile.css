@@ -1,0 +1,127 @@
+@import "root-variables.css";
+
+@font-face {
+    font-family: "MonumentExtended-Regular";
+    src: url("../fonts/Monument-Extended/MonumentExtended-Regular.otf");
+}
+
+@font-face {
+    font-family: "MonumentExtended-Ultrabold";
+    src: url("../fonts/Monument-Extended/MonumentExtended-Ultrabold.otf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Black";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Black.ttf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Bold";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Bold.ttf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Medium";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Medium.ttf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Regular";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Light";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Light.ttf");
+}
+
+body {
+    background-image: var(--background-color);
+    background-attachment: fixed;
+    margin:0;
+}
+
+.opacity-zero {
+    opacity: 0;
+}
+
+.start-animation {
+    animation: start-animation-for-all-other-pages 1s ease forwards;
+    animation-delay: .1s;
+}
+
+.start-animation-for-input-text-div {
+    animation: start-animation-for-all-other-pages-input-text-div 1s ease;
+}
+
+@keyframes start-animation-for-all-other-pages {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    } 
+}
+
+@keyframes start-animation-for-all-other-pages-input-text-div {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: .6;
+    } 
+}
+
+/* profile start */
+
+.signin-form-table-tr {
+    font-family: 'BasisGrotesqueArabicPro-Regular';
+}
+
+.signin-form-table-td {
+    padding: 17px 0px;
+    width: 300px;
+    color: white;    
+}
+
+.signin-form-table-td:first-child {
+    padding-left: 25px;
+}
+
+.signin-form-table-td:nth-child(2) {
+    text-align: right;
+    padding-right: 10px;
+    text-align: center;
+    
+}
+
+.profil_adat_profilkep {
+    height: 175px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom:10px;
+    clip-path: circle(40%);
+  }
+
+
+
+  #profil-adatok-table {
+    margin: 0 auto;
+    font-size: 1.2em;
+    width: 600px;
+    padding: 17px 0px;
+    border-radius: 15px;
+    background-image: var(--card-background-color-gradient);
+    box-shadow: 0px 0px 15px black;
+    margin-bottom: 30px;
+}
+
+#profil-adatok-caption {
+    font-family: "MonumentExtended-Regular";
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+
+}
+
+/* profile end */

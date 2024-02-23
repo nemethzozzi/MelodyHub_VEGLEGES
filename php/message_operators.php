@@ -23,10 +23,10 @@ function saveMessages($messages) {
         echo "Hiba a fórum fájl írásánál!";
     }
     foreach($messages as $current_message) {
-        fwrite($forumMessagesFile, serialize($current_message)."\n");    
+        fwrite($forumMessagesFile, serialize($current_message) . "\n");    
     }
-    
     fclose($forumMessagesFile);
 }
+
 
 ?>

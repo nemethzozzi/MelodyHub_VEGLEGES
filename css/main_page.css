@@ -178,7 +178,7 @@ nav {
 nav .nav-links {
     display: block; 
     float: left;
-    color:  var(--nav-link-color);
+    color:  white;
     text-decoration: none;
     font-size: var(--nav-links-size);
     text-align: center;
@@ -188,7 +188,7 @@ nav .nav-links {
 }
 
 nav .nav-links:hover {
-    background-color: var(--nav-link-hover-color);
+    background-color: var(--green-color);
     color: black;
     font-weight: bold;
 }
@@ -309,12 +309,17 @@ nav .disabled-link:hover {
 
 .music-div-music-button {
     height: 45px;
+    width: 45px;
     display: block;
     margin: 0 auto;
+    transition: .3s ease;
+    border-radius: 50%;
+    background-color: var(--green-color);
 }
 
 .music-div-music-button:hover {
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 /*music-offer-section end*/

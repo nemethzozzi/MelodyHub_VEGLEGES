@@ -72,70 +72,6 @@ body {
     } 
 }
 
-/*navbar start*/
-nav {
-    position: fixed; 
-    background-color: black;
-    overflow: hidden;
-    top: 0%; 
-    width: 100%; 
-    z-index: 100; 
-}
-
-nav #nav-span {
-    float: right;
-}
-
-nav .nav-links {
-    display: block; 
-    float: left; 
-    color: var(--nav-link-color);
-    text-decoration: none;
-    font-size: var(--nav-links-size);
-    text-align: center;
-    transition: .3s ease;
-    padding: 15px 20px;
-    font-family: 'BasisGrotesqueArabicPro-Regular';
-}
-
-nav .nav-links:hover {
-    background-color: var(--nav-link-color);
-    color: black;
-    font-weight: bold;
-}
-
-nav .disabled-link {
-    background-color: black;
-    color: var(--nav-disabled-link-hover-color);
-}
-nav .disabled-link:hover {
-    background-color: black;
-    color: var(--nav-disabled-link-hover-color);
-    font-weight: normal;
-    cursor: pointer;
-}
-/*navbar end*/
-
-
-
-/*cim, alcim start*/
-.cim {
-    font-family: "MonumentExtended-Ultrabold";
-    text-align: center;
-    color: white;
-    font-size: var( --h1-font-size-except-mainpage);
-    margin-top: 60px;
-}
-
-.alcim {
-    font-family: "BasisGrotesqueArabicPro-Light";
-    text-align: center;
-    color: white;
-    font-size: var( --h2-font-size-except-mainpage);
-    margin-top: -20px;
-    margin-bottom: 20px;
-}
-/*cim, alcim end*/
 
 
 /*aboutus start*/
@@ -150,14 +86,13 @@ nav .disabled-link:hover {
     margin-bottom: 16px;
     padding: 0 8px;
     transition: .3s ease;
-    
   }
   
   .card {
     border-radius: 5px;
     box-shadow: 0 0 10px black;
     margin: 8px;
-    background-color: var(--about-us-card-color);
+    background-image: var(--card-background-color-gradient);
   }
   
   #ourteam{
@@ -202,21 +137,25 @@ nav .disabled-link:hover {
   }
   
   .contact-button {
-    border: none;
     outline: 0;
-    display: inline-block;
+    display: block;
+    margin: 10px auto;
     padding: 8px;
-    color: white;
-    background-color: black;
     text-align: center;
+    background-color: var(--about-us-card-color);
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
     cursor: pointer;
-    width: 100%;
+    width: 50%;
     font-family:"MonumentExtended-Regular";
     transition: .3s ease;
   }
   
   .contact-button:hover {
-    background-color: #212121;
+    background-color: var(--green-color);
+    color: black;
+    border: 2px solid var(--green-color);
   }
 
   .adatok-p {
@@ -236,8 +175,7 @@ nav .disabled-link:hover {
     width: 30%;
     display: block;
     margin: 0 auto;
-    clip-path: circle(30%);
-    transition: .8s ease;
+    clip-path: circle(45%);
   }
   /* .kepek-rolunk:hover {
     clip-path: circle(100%);
@@ -245,3 +183,24 @@ nav .disabled-link:hover {
   } */
   /*aboutus end*/
 
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .aboutus-column {
+    width: 100%; /* Adjust width for full width on tablets */
+  }
+  .kepek-rolunk {
+    width: 50%; /* Adjust width for images on tablets */
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .aboutus-column {
+    width: 100%; /* Adjust width for full width on mobile */
+    display: block; /* Stack columns on top of each other */
+    margin-bottom: 20px; /* Optional: Add some space between stacked columns */
+  }
+  .kepek-rolunk {
+    width: 70%; /* Adjust width for images on mobile */
+  }
+}

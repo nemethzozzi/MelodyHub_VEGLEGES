@@ -1,7 +1,4 @@
-a:3:{s:12:"liked-genres";s:11:"pop, hiphop";s:14:"message-author";s:16:"nemesko.szabolcs";s:12:"message-text";s:10:"Sziasztok!";}
-a:3:{s:12:"liked-genres";s:11:"pop, hiphop";s:14:"message-author";s:16:"nemesko.szabolcs";s:12:"message-text";s:34:"Csak egy felhasználó van még :(";}
-a:3:{s:12:"liked-genres";s:11:"pop, hiphop";s:14:"message-author";s:16:"nemesko.szabolcs";s:12:"message-text";s:17:"Már több is van";}
-a:3:{s:12:"liked-genres";s:11:"pop, hiphop";s:14:"message-author";s:16:"nemesko.szabolcs";s:12:"message-text";s:13:"Remélem megy";}
-a:3:{s:12:"liked-genres";s:11:"pop, hiphop";s:14:"message-author";s:16:"nemesko.szabolcs";s:12:"message-text";s:8:"Remélem";}
-a:3:{s:12:"liked-genres";s:11:"pop, hiphop";s:14:"message-author";s:16:"nemesko.szabolcs";s:12:"message-text";s:4:"Megy";}
-a:3:{s:12:"liked-genres";s:11:"pop, hiphop";s:14:"message-author";s:16:"nemesko.szabolcs";s:12:"message-text";s:9:"Sziasztok";}
+a:3:{s:12:"liked-genres";s:3:"pop";s:14:"message-author";s:5:"zozzi";s:12:"message-text";s:27:"Sziasztok! Hogy vagytok? :)";}
+a:3:{s:12:"liked-genres";s:3:"pop";s:14:"message-author";s:5:"zozzi";s:12:"message-text";s:17:"Végre működik!";}
+a:3:{s:12:"liked-genres";s:3:"pop";s:14:"message-author";s:5:"zozzi";s:12:"message-text";s:15:"Ez nagyon menő";}
+a:3:{s:12:"liked-genres";s:3:"pop";s:14:"message-author";s:5:"zozzi";s:12:"message-text";s:19:"Hogy vagy Ágoston?";}

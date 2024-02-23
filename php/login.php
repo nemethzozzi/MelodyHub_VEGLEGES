@@ -1,3 +1,17 @@
+<?php
+  session_start();
+  include "login_operator.php";
+  
+  if(isset($_SESSION['session-user'])) {
+      echo '<script>changeLinks()</script>';
+      echo '<script>setToActiveLinks()</script>';
+
+      header("Location:./main_page.php");
+
+  } 
+?>
+
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -6,8 +20,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MelodyHub | Bejelentkezés</title>
   <link rel="icon" href="../images/icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="../css/others.css">
-  <link rel="stylesheet" href="../css/scrollbar.css">
+  <link rel="stylesheet" type="text/css" href="../css/login.css">
+  <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="../css/scrollbar.css">
   <script src="../js/jquery-3.4.1.min.js"></script>
     <script>
         function changeLinks() {
@@ -33,10 +48,10 @@
     <a class="nav-links disabled-link">Zenék</a>
     <a class="nav-links disabled-link">Fórum</a>
     <span id="nav-span">
-                <a href="about_us.php" class="nav-links">Rólunk</a>
-                <a class="nav-links disabled-link">Jelentkezz be</a>
-                <a href="signin.php" class="nav-links">Regisztrálj</a>
-            </span>
+      <a href="about_us.php" class="nav-links">Rólunk</a>
+      <a class="nav-links disabled-link">Jelentkezz be</a>
+      <a href="signin.php" class="nav-links">Regisztrálj</a>
+    </span>
   </nav>
 </header>
 
@@ -53,44 +68,31 @@
     <tr class="login-form-table-tr">
       <td class="login-form-table-td">Felhasználónév:</td>
       <td class="login-form-table-td">
-        <input type="text" name="felhnev-login" id="felhnev-login" size="30" maxlength="30" required>
+        <input type="text" name="felhnev-login" id="felhnev-login" size="40" maxlength="40" required>
       </td>
     </tr>
 
     <tr class="login-form-table-tr">
       <td class="login-form-table-td">Jelszó:</td>
       <td class="login-form-table-td">
-        <input type="password" name="jelszo-login" id="jelszo-login" size="30" maxlength="30" required>
+        <input type="password" name="jelszo-login" id="jelszo-login" size="40" maxlength="40" required>
       </td>
     </tr>
 
+    <tr>
+      <td>
+        <input type="submit" value="Bejelentkezés" id="bejelentkezes-button" name="bejelentkezes-button">
+      </td>
+      <td>
+        <p id="regisztracio-kerdes-p"> Még nem regisztáltál be?
+          <a href="signin.php" id="goto-reg-link">Regisztrálok</a>
+        </p>
+      </td>
+    </tr>
+
+
   </table>
-
-  <input type="submit" value="Bejelentkezés" id="bejelentkezes-button" name="bejelentkezes-button">
-  <p id="regisztracio-kerdes-p"> Még nem regisztáltál be?</p>
-  <div id="goto-reg-link-div">
-    <a href="signin.php" id="goto-reg-link">Regisztrálok</a>
-  </div>
-
-
 </form>
-
-<?php
-        include "login_operator.php";
-        session_start();
-        
-        if(isset($_SESSION['session-user'])) {
-            echo '<script>changeLinks()</script>';
-            echo '<script>setToActiveLinks()</script>';
-
-            header("Location:./main_page.php");
-
-        }
-        
-        
-?>
-
-
 
 </body>
 </html>

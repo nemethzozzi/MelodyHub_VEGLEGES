@@ -1,0 +1,167 @@
+@import "root-variables.css";
+
+@font-face {
+    font-family: "MonumentExtended-Regular";
+    src: url("../fonts/Monument-Extended/MonumentExtended-Regular.otf");
+}
+
+@font-face {
+    font-family: "MonumentExtended-Ultrabold";
+    src: url("../fonts/Monument-Extended/MonumentExtended-Ultrabold.otf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Black";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Black.ttf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Bold";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Bold.ttf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Medium";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Medium.ttf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Regular";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Light";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Light.ttf");
+}
+
+body {
+    background-image: var(--background-color);
+    background-attachment: fixed;
+    margin:0;
+}
+
+.opacity-zero {
+    opacity: 0;
+}
+
+.start-animation {
+    animation: start-animation-for-all-other-pages 1s ease forwards;
+    animation-delay: .1s;
+}
+
+.start-animation-for-input-text-div {
+    animation: start-animation-for-all-other-pages-input-text-div 1s ease;
+}
+
+@keyframes start-animation-for-all-other-pages {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    } 
+}
+
+@keyframes start-animation-for-all-other-pages-input-text-div {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: .6;
+    } 
+}
+
+/* login start */
+#login-form-table {
+    margin: 0 auto;
+    font-size: 1.2em;
+    width: 600px;
+    padding: 17px 0px;
+    border-radius: 15px;
+    background-image: var(--card-background-color-gradient);
+    box-shadow: 0px 0px 15px black;
+
+}
+
+#login-form-table-caption {
+    font-family: "MonumentExtended-Regular";
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.login-form-table-tr {
+    font-family: 'BasisGrotesqueArabicPro-Regular';
+}
+
+.login-form-table-td {
+    padding: 17px 0px;
+    width: 300px;
+    color: white;
+}
+
+.login-form-table-td:first-child {
+    padding-left: 25px;
+}
+
+.login-form-table-td:nth-child(2) {
+    text-align: right;
+    padding-right: 10px;
+    text-align: center;
+}
+
+
+#felhnev-login,
+#jelszo-login
+ {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'BasisGrotesqueArabicPro-Regular';
+    font-size: .75em;
+    background-color: var(--input-background-color);
+    color: var(--signin-login-input-text-color);
+}
+
+
+#bejelentkezes-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    background-color: var(--green-color);
+    padding: 10px;
+    font-family: 'MonumentExtended-Regular';
+    font-size: 0.8em;
+    border-radius: 5px;
+    border: none;
+    transition: .3s ease;
+    color: black;
+}
+
+#bejelentkezes-button:hover {
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
+}
+
+
+#goto-reg-link{
+    font-family: 'MonumentExtended-Regular';
+    font-size: 1.2em;
+    color: var(--green-color);
+    text-decoration: none;
+
+}
+
+#goto-reg-link:hover{
+    text-decoration: underline;
+}
+
+#regisztracio-kerdes-p {
+        text-align: center;
+        margin-top: 40px;
+        font-family: 'MonumentExtended-Regular';
+        color: white;
+        font-size: 0.6em;
+}
+/* login end */

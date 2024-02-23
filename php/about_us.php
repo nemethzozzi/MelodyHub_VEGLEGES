@@ -1,14 +1,3 @@
-
-<?php
-        session_start();
-        include "login_operator.php";
-        if(isset($_SESSION['session-user'])) {
-            echo '<script>changeLinks()</script>';
-            echo '<script>setToActiveLinks()</script>';
-        }
-  ?>
-
-
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -17,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MelodyHub | Rólunk</title>
   <link rel="icon" href="../images/icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="../css/others.css">
-  <link rel="stylesheet" href="../css/scrollbar.css">
+  <link rel="stylesheet" type="text/css" href="../css/aboutus.css">
+  <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="../css/scrollbar.css">
   <script src="../js/jquery-3.4.1.min.js"></script>
+  <!-- <script src="../js/navbar.js"></script> -->
     <script>
         function changeLinks() {
             $("#login-id").attr("href", "profil_adatok.php");
@@ -63,13 +54,12 @@
 
 <div class="aboutus-section opacity-zero start-animation">
     <h1 id="aboutus-section-h1">Rólunk</h1>
-    <p id="introduction">Mi vagyunk a 'null' webfejlesztő csapat, és ez a weboldal első közös munkánk gyümölcse.</p>
+    <p id="introduction">Mi vagyunk a 'A progalap mar megvan' webfejlesztő csapat, és ez a weboldal első közös munkánk gyümölcse.</p>
 </div>
   
   <h2 id="ourteam" class="opacity-zero start-animation">Csapatunk</h2>
 
   <main id="about-us-main" class="opacity-zero start-animation">
-
 
 
   <!-- Zoli info -->
@@ -79,13 +69,13 @@
         <div class="container">
           <h2 class="nev">Németh Zoltán</h2>
           <p class="job">Webfejlesztő</p>
-          <p class="adatok-p">SZTE üzemmérnök informatikus hallgató</p>
+          <p class="adatok-p">SZTE üzemmérnök hallgató</p>
           <p class="adatok-p">nemethzoltan0524@gmail.com</p>
           <p><button class="contact-button">Contact</button></p>
         </div>
       </div>
     </div>
-    
+  
     <!-- Ágoston info -->
     <div class="aboutus-column">
       <div class="card">
@@ -102,6 +92,13 @@
 
   </main>
 
+<?php
+  include "login_operator.php";
+  if(isset($_SESSION['session-user'])) {
+      echo '<script>changeLinks()</script>';
+      echo '<script>setToActiveLinks()</script>';
+  }
+?>
   
 </body>
 

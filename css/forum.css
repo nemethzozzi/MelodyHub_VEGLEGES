@@ -1,0 +1,164 @@
+@import "root-variables.css";
+
+@font-face {
+    font-family: "MonumentExtended-Regular";
+    src: url("../fonts/Monument-Extended/MonumentExtended-Regular.otf");
+}
+
+@font-face {
+    font-family: "MonumentExtended-Ultrabold";
+    src: url("../fonts/Monument-Extended/MonumentExtended-Ultrabold.otf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Black";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Black.ttf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Bold";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Bold.ttf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Medium";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Medium.ttf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Regular";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "BasisGrotesqueArabicPro-Light";
+    src: url("../fonts/Basis-Grotesque/BasisGrotesqueArabicPro-Light.ttf");
+}
+
+body {
+    background-image: var(--background-color);
+    background-attachment: fixed;
+    margin:0;
+}
+
+.opacity-zero {
+    opacity: 0;
+}
+
+.start-animation {
+    animation: start-animation-for-all-other-pages 1s ease forwards;
+    animation-delay: .1s;
+}
+
+@keyframes start-animation-for-all-other-pages {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    } 
+}
+
+
+/*forum start*/
+.forum-container{
+    display:block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: var(--forum-container-color);
+    width: 80%;
+    padding: 15px;
+    border-radius: 15px;
+    color:white;
+    transition: .3s ease;
+
+}
+.post-author{
+    margin:0;
+    padding:0;
+    font-family:"BasisGrotesqueArabicPro-Bold";
+    color:rgb(173, 173, 173);
+
+}
+.post-content{
+    margin:0;
+    padding:0;
+    font-family:"BasisGrotesqueArabicPro-Regular";
+    color:white;
+    line-height: 1.1em;
+
+}
+
+#input-text-div{
+    width: 85%; 
+    background-color: var(--input-text-div-color);
+    border-radius:15px;
+    padding:15px;
+    font-family: "BasisGrotesqueArabicPro-Regular";
+    margin: 0 auto;
+    opacity: 1;
+    margin-bottom: 25px;
+}
+
+#input-text {
+    width: 98%;
+    resize: none;
+    height: 120px;
+    background-color: var(--input-textarea-color);
+    color: white;
+    border: none;
+    font-family: "BasisGrotesqueArabicPro-Regular";
+    font-size: 1em;
+    padding: 7px;
+}
+
+#post-button{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: .9em;
+    background-color: var(--background-color);
+    color: white;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-family: "MonumentExtended-Regular";
+    transition: .3s ease;
+}
+
+
+#post-button:hover {
+    cursor: pointer;
+    background-color: var(--green-color);
+    color: black;
+    border: 2px solid var(--green-color);
+}
+
+
+
+input[type="file"]::-webkit-file-upload-button{
+   
+    margin-right: 5px;
+    margin-bottom:10px;
+    background-color: var(--post-button-color);
+    color: var(--signin-login-input-text-color);
+    border-radius: 5px;
+    border:0px;
+    padding-top:3px;
+    padding-bottom:3px;
+    font-family:"BasisGrotesqueArabicPro-Regular";
+    font-size:1.1em;
+    transition: .3s ease;
+}
+
+input[type=file]::-webkit-file-upload-button:hover{
+    cursor: pointer!important;
+    background-color: white;
+  
+    color: black;
+}
+
+#file-input{
+   color: var(--signin-login-input-text-color);
+}
+/*forum end*/
