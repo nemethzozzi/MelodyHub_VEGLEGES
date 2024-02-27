@@ -10,7 +10,6 @@
   <link rel="stylesheet" type="text/css" href="../css/navbar.css">
   <link rel="stylesheet" type="text/css" href="../css/scrollbar.css">
   <script src="../js/jquery-3.4.1.min.js"></script>
-  <!-- <script src="../js/navbar.js"></script> -->
     <script>
         function changeLinks() {
             $("#login-id").attr("href", "profil_adatok.php");

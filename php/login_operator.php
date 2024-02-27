@@ -6,24 +6,6 @@ if (!isset($_SESSION)) {
 
 
 if(isset($_POST['bejelentkezes-button'])) {
-
-    /*
-    $szabi = [
-        "firstname" => "Nemeskó",
-        "lastname" => "Szabolcs",
-        "birth-date" => "2003-03-26",
-        "username" => "nemesko.szabolcs",
-        "liked-genres" => "pop, instrumental, hip-hop",
-        "email" => "szabolcsnemesko@gmail.com",
-        "password" => "password123",
-        "profile-picture" => "../images/szabikep.jpg",
-        "introduction" => 'Szia, Szabi vagyok, és én vagyok a "null" csapat egyik csapattagja.'
-    ];
-
-    $users = [$szabi];
-    saveUsers($users);
-    */
-
     
     $entered_username = $_POST['felhnev-login'];
     $entered_password = $_POST['jelszo-login'];
