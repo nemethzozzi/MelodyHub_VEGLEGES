@@ -149,18 +149,6 @@ body {
     }
 }
 
-nav {
-    position: fixed; 
-    background-color: black;
-    overflow: hidden; 
-    width: 100%; 
-    z-index: 100;
-    top: -7%;
-    opacity: 0;
-
-    animation: start-nav-animation 1.5s ease forwards;
-}
-
 @keyframes start-nav-animation {
     from {
         top: -7%;
@@ -171,38 +159,7 @@ nav {
     }
 }
 
-#nav-span {
-    float: right;
-}
 
-nav .nav-links {
-    display: block; 
-    float: left;
-    color:  white;
-    text-decoration: none;
-    font-size: var(--nav-links-size);
-    text-align: center;
-    transition: .3s ease;
-    padding: 15px 20px;
-    font-family: 'BasisGrotesqueArabicPro-Regular';
-}
-
-nav .nav-links:hover {
-    background-color: var(--green-color);
-    color: black;
-    font-weight: bold;
-}
-
-nav .disabled-link {
-    background-color: black;
-    color: var(--nav-disabled-link-hover-color);
-}
-nav .disabled-link:hover {
-    background-color: black;
-    color: var(--nav-disabled-link-hover-color);
-    font-weight: normal;
-    cursor: pointer;
-}
 
 /*music-offer-section start*/
 #music-offer-h2 {
@@ -294,7 +251,7 @@ nav .disabled-link:hover {
     font-family: 'BasisGrotesqueArabicPro-Regular';
     font-weight: normal;
     text-align: center;
-    margin-top: -10px;
+    margin-top: 10px;
 }
 
 .music-div-music-length {
@@ -303,7 +260,7 @@ nav .disabled-link:hover {
     font-family: 'BasisGrotesqueArabicPro-Regular';
     font-weight: normal;
     text-align: center;
-    margin-top: -10px;
+    margin-top: 10px;
     margin-bottom: 12px;
 }
 
@@ -340,192 +297,50 @@ nav .disabled-link:hover {
 
 
 
-/*responsive start*/
-
-
-/* desktop, large screen */
-@media screen and (max-width: 1280px) {
-
-    /*mainpage start*/
-
-    #cim {
-        font-family: 'MonumentExtended-Ultrabold';
-        text-align: center;
-        color: white;
-        margin:0;
-        font-size: 6.2em;
-        opacity: 0;
-        transition: .3s ease;
-    
-        animation: start-cim1-animation 1.5s ease forwards;
-        animation-delay: .3s;
-    }
-
-    #motto {
-        font-family: 'BasisGrotesqueArabicPro-Light';
-        text-align: center;
-        color: rgb(255, 255, 255);
-        font-size: 2.7em;
-        padding: 0px 15px;
-        opacity: 0;
-        transition: .3s ease;
-    
-        animation: start-cim2-animation 1.5s ease forwards;
-        animation-delay: .5s;
-    }
-
-    /*mainpage end*/
-
-}
-
-
-
-
-
-
-
-/* small screen, laptops */
+/* Responsive styles */
 @media screen and (max-width: 1024px) {
-
+    /* Adjust styles for tablets */
     #cim {
-        font-family: 'MonumentExtended-Ultrabold';
-        text-align: center;
-        color: white;
-        margin:0;
-        font-size: 5.5em;
-        opacity: 0;
-        transition: .3s ease;
-    
-        animation: start-cim1-animation 1.5s ease forwards;
-        animation-delay: .3s;
+        font-size: 3.0em;
     }
 
     #motto {
-        font-family: 'BasisGrotesqueArabicPro-Light';
-        text-align: center;
-        color: rgb(255, 255, 255);
         font-size: 2em;
-        padding: 0px 15px;
-        opacity: 0;
-        transition: .3s ease;
-    
-        animation: start-cim2-animation 1.5s ease forwards;
-        animation-delay: .5s;
     }
-
-}
-
-
-
-
-
-
-
-
-
-/* tablets */
-@media screen and (max-width: 768px) {
-
-    #cim {
-        font-family: 'MonumentExtended-Ultrabold';
-        text-align: center;
-        color: white;
-        margin:0;
-        font-size: 4.4em;
-        opacity: 0;
-        transition: .3s ease;
-    
-        animation: start-cim1-animation 1.5s ease forwards;
-        animation-delay: .3s;
-    }
-
-    #motto {
-        font-family: 'BasisGrotesqueArabicPro-Light';
-        text-align: center;
-        color: rgb(255, 255, 255);
-        font-size: 1.5em;
-        padding: 0px 15px;
-        opacity: 0;
-        transition: .3s ease;
-    
-        animation: start-cim2-animation 1.5s ease forwards;
-        animation-delay: .5s;
-    }
-    
-    nav .nav-links {
-        display: block; 
-        float: left;
-        color:  var(--nav-link-color);
-        text-decoration: none;
-        font-size: 1em;
-        text-align: center;
-        transition: .3s ease;
-        padding: 12px 17px;
-        font-family: 'BasisGrotesqueArabicPro-Regular';
-    }
-    nav .disabled-link {
-        background-color: black;
-        color: var(--nav-disabled-link-hover-color);
-    }
-    nav .disabled-link:hover {
-        background-color: black;
-        color: var(--nav-disabled-link-hover-color);
-        font-weight: normal;
-        cursor: pointer;
-    }
-    
-    
 
     .music-div {
-        height: 250px; /*base: 300px*/
-        width: 200px; /*base: 250px*/
-        background-image: var(--card-background-color-gradient);
-        border-radius: 15px;
+        height: 250px;
+        width: 200px;
     }
-    
+
     .music-div-author-image {
-        display: block;
-        margin: 0 auto;
-        border-radius: 50%;
-        margin-top: 13px;
         height: 90px;
     }
-    
+
     .music-div-author {
         font-size: 1.1em;
-        color: white;
-        font-family: 'BasisGrotesqueArabicPro-Regular';
-        font-weight: normal;
-        text-align: center;
-        margin-top: 13px;
     }
-    
+
     .music-div-music-title {
         font-size: 1em;
-        color: white;
-        font-family: 'BasisGrotesqueArabicPro-Regular';
-        font-weight: normal;
-        text-align: center;
-        margin-top: -10px;
     }
-    
+
     .music-div-music-length {
         font-size: .95em;
-        color: white;
-        font-family: 'BasisGrotesqueArabicPro-Regular';
-        font-weight: normal;
-        text-align: center;
-        margin-top: -10px;
-        margin-bottom: 12px;
     }
-    
+
     .music-div-music-button {
         height: 40px;
-        display: block;
-        margin: 0 auto;
     }
-
 }
 
+@media screen and (max-width: 768px) {
+    /* Adjust styles for mobile devices */
+    #cim {
+        font-size: 2.4em;
+    }
 
-/*responsive end*/
+    #motto {
+        font-size: 1.0em;
+    }
+}

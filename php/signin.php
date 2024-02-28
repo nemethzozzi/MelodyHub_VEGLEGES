@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../css/signin.css">
     <link rel="stylesheet" type="text/css" href="../css/navbar.css">
     <link rel="stylesheet" type="text/css" href="../css/scrollbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="../js/jquery-3.4.1.min.js"></script>
     <script>
         function changeLinks() {
@@ -29,16 +30,21 @@
 <body>
 
     <header>
-        <nav>
-            <a href="main_page.php" class="nav-links">Főoldal</a>
-            <a class="nav-links disabled-link">Zenék</a>
-            <a class="nav-links disabled-link">Fórum</a>
-            <span id="nav-span">
-                <a href="about_us.php" class="nav-links">Rólunk</a>
-                <a href="login.php" class="nav-links">Jelentkezz be</a>
-                <a class="nav-links disabled-link">Regisztrálj</a>
-            </span>
-        </nav>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="main_page.php" class="nav-links">Főoldal</a></li>
+        <li><a class="nav-links disabled-link" id="music-id">Zenék</a></li>
+        <li><a class="nav-links disabled-link" id="forum-id">Fórum</a></li>
+        <span id="nav-span">
+        <li><a class="nav-links disabled-link">Rólunk</a></li>
+        <li><a href="login.php"class="nav-links" id="login-id">Jelentkezz be</a></li>
+        <li><a href="signin.php" class="nav-links disabled-link" id="signin-id">Regisztrálj</a></li>
+      </ul>
+    </nav>
     </header>
 
     <h1 class="cim opacity-zero start-animation">

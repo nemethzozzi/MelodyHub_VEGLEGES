@@ -16,6 +16,7 @@ if (!isset($_SESSION)) {
   <link rel="stylesheet" type="text/css" href="../css/forum.css">
   <link rel="stylesheet" type="text/css" href="../css/navbar.css">
   <link rel="stylesheet" type="text/css" href="../css/scrollbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <script src="../js/jquery-3.4.1.min.js"></script>
   <script>
         function changeLinks() {
@@ -39,16 +40,21 @@ if (!isset($_SESSION)) {
 
 
 <header>
-  <nav>
-    <a href="main_page.php" class="nav-links">Főoldal</a>
-    <a href="music.php" class="nav-links">Zenék</a>
-    <a class="nav-links disabled-link">Fórum</a>
-    <span id="nav-span">
-      <a href="about_us.php" class="nav-links">Rólunk</a>
-      <a href="login.php" class="nav-links" id="login-id">Jelentkezz be</a>
-      <a href="signin.php" class="nav-links" id="signin-id">Regisztrálj</a>
-    </span>
-  </nav>
+<nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="main_page.php" class="nav-links">Főoldal</a></li>
+        <li><a href="music.php"class="nav-links">Zenék</a></li>
+        <li><a class="nav-links disabled-link">Fórum</a></li>
+        <span id="nav-span">
+        <li><a href="about_us.php" class="nav-links">Rólunk</a></li>
+        <li><a href="login.php"class="nav-links" id="login-id">Jelentkezz be</a></li>
+        <li><a href="signin.php" class="nav-links" id="signin-id">Regisztrálj</a></li>
+      </ul>
+    </nav>
 </header>
 
 <h1 class="cim opacity-zero start-animation">

@@ -59,6 +59,25 @@ body {
     } 
 }
 
+/*cim, alcim start*/
+.cim {
+    font-family: "MonumentExtended-Ultrabold";
+    text-align: center;
+    color: white;
+    font-size: var( --h1-font-size-except-mainpage);
+    margin-top: 80px;
+}
+
+.alcim {
+    font-family: "BasisGrotesqueArabicPro-Light";
+    text-align: center;
+    color: white;
+    font-size: var( --h2-font-size-except-mainpage);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*cim, alcim end*/
+
 
 /*forum start*/
 .forum-container{

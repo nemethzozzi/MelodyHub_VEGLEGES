@@ -72,6 +72,24 @@ body {
     } 
 }
 
+/*cim, alcim start*/
+.cim {
+    font-family: "MonumentExtended-Ultrabold";
+    text-align: center;
+    color: white;
+    font-size: var( --h1-font-size-except-mainpage);
+    margin-top: 80px;
+}
+
+.alcim {
+    font-family: "BasisGrotesqueArabicPro-Light";
+    text-align: center;
+    color: white;
+    font-size: var( --h2-font-size-except-mainpage);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*cim, alcim end*/
 
 /*music start*/
 #genres-div {
@@ -156,7 +174,7 @@ body {
     font-family: 'BasisGrotesqueArabicPro-Regular';
     font-weight: normal;
     text-align: center;
-    margin-top: -10px;
+    margin-top: 10px;
 }
 
 .music-div-music-length {
@@ -165,7 +183,7 @@ body {
     font-family: 'BasisGrotesqueArabicPro-Regular';
     font-weight: normal;
     text-align: center;
-    margin-top: -10px;
+    margin-top: 10px;
     margin-bottom: 12px;
 }
 

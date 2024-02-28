@@ -72,6 +72,25 @@ body {
     } 
 }
 
+/*cim, alcim start*/
+.cim {
+    font-family: "MonumentExtended-Ultrabold";
+    text-align: center;
+    color: white;
+    font-size: var( --h1-font-size-except-mainpage);
+    margin-top: 80px;
+}
+
+.alcim {
+    font-family: "BasisGrotesqueArabicPro-Light";
+    text-align: center;
+    color: white;
+    font-size: var( --h2-font-size-except-mainpage);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*cim, alcim end*/
+
 /* login start */
 #login-form-table {
     margin: 0 auto;
@@ -165,3 +184,54 @@ body {
         font-size: 0.6em;
 }
 /* login end */
+
+/* For tablets */
+@media (max-width: 768px) {
+    #login-form-table {
+        width: 80%; /* Adjust width for smaller screens */
+        font-size: 0.9em; /* Decrease font size for smaller screens */
+    }
+
+    .login-form-table-tr {
+        display: block; /* Stack table rows vertically */
+        margin-bottom: 20px; /* Add spacing between rows */
+    }
+
+    .login-form-table-td {
+        width: 100%; /* Allow cells to take full width */
+        padding: 10px; /* Adjust padding for smaller screens */
+        text-align: center; /* Center-align table cells */
+    }
+
+    #bejelentkezes-button {
+        width: 50%; /* Adjust button width */
+    }
+}
+
+/* For phones */
+@media (max-width: 480px) {
+    #login-form-table {
+        width: 90%; /* Adjust width for even smaller screens */
+        font-size: 0.8em; /* Decrease font size for smaller screens */
+    }
+
+    #login-form-table-caption {
+        font-size: 1.2em; /* Increase font size for readability */
+    }
+
+    .login-form-table-td {
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+
+    #bejelentkezes-button {
+        width: 70%; /* Adjust button width */
+    }
+
+    #goto-reg-link {
+        font-size: 1em; /* Adjust font size */
+    }
+
+    #regisztracio-kerdes-p {
+        font-size: 0.8em; /* Adjust font size */
+    }
+}
