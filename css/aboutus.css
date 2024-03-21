@@ -196,30 +196,27 @@ body {
     margin: 0 auto;
     clip-path: circle(45%);
   }
-  /* .kepek-rolunk:hover {
-    clip-path: circle(100%);
-    filter: brightness(100%) grayscale(0);
-  } */
-  /*aboutus end*/
+/*aboutus end*/
 
-/* Tablet */
-@media screen and (max-width: 768px) {
+/* Responsive start */
+@media screen and (max-width: 952px) {
   .aboutus-column {
-    width: 100%; /* Adjust width for full width on tablets */
+    width: 100%; 
   }
   .kepek-rolunk {
-    width: 50%; /* Adjust width for images on tablets */
+    width: 50%; 
   }
 }
 
-/* Mobile */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 858px) {
   .aboutus-column {
-    width: 100%; /* Adjust width for full width on mobile */
-    display: block; /* Stack columns on top of each other */
-    margin-bottom: 20px; /* Optional: Add some space between stacked columns */
+    width: 100%; 
+    display: block; 
+    margin-bottom: 20px; 
   }
   .kepek-rolunk {
-    width: 70%; /* Adjust width for images on mobile */
+    width: 70%; 
   }
 }
+
+/* Responsive end */

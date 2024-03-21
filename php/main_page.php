@@ -24,71 +24,46 @@
             $("#forum-id").attr("href", "forum.php");
             $("#forum-id").removeClass("disabled-link");
         }
-        
     </script>
-    
 </head>
 
 <body onload="waitFor_DownArrowChangeClass(); listOffers()">
-
-
-
-
-    
     <header>
-    <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-        <li><a class="nav-links disabled-link">Főoldal</a></li>
-        <li><a class="nav-links disabled-link" id="music-id">Zenék</a></li>
-        <li><a class="nav-links disabled-link" id="forum-id">Fórum</a></li>
-        <span id="nav-span">
-        <li><a href="about_us.php" class="nav-links">Rólunk</a></li>
-        <li><a href="login.php" class="nav-links" id="login-id">Jelentkezz be</a></li>
-        <li><a href="signin.php" class="nav-links" id="signin-id">Regisztrálj</a></li>
-      </ul>
-    </nav>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="navbar-container">
+                <ul class="nav-links-left">
+                    <li><a class="nav-links disabled-link">Főoldal</a></li>
+                    <li><a class="nav-links disabled-link" id="music-id">Zenék</a></li>
+                    <li><a class="nav-links disabled-link" id="forum-id">Fórum</a></li>
+                </ul>
+                <ul class="nav-links-right">
+                    <li><a href="about_us.php" class="nav-links">Rólunk</a></li>
+                    <li><a href="login.php" class="nav-links" id="login-id">Jelentkezz be</a></li>
+                    <li><a href="signin.php" class="nav-links" id="signin-id">Regisztrálj</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    
+    <section id="cimek-section">
+        <h1 id="cim">MelodyHub</h1>
+        <h2 id="motto">Share your love for music and connect with the community.</h2>
+        <img src="../images/down-arrow.svg" alt="Down Arrow" id="down-arrow" class="down-arrow-start-animation">
+    </section>
 
-        
-
-        <section id="cimek-section">
-            <h1 id="cim">MelodyHub</h1>
-            <h2 id="motto">Share your love for music and connect with the community.</h2>
-
-            <img src="../images/down-arrow.svg" alt="Down Arrow" id="down-arrow" class="down-arrow-start-animation">
-
-        </section>
-
-        <main>
-            
-        <!--zene ajánlások-->
+    <main>
         <h2 id="music-offer-h2">Ajánlatok</h2>
-        <section id="music-offers-section">
+        <div id="music-offers-section">
+            <!-- Music offers will be dynamically loaded here -->
+        </div>
+    </main>
 
-            
-            
-        </section>
-        
-        </main>
-
-        
-        <!-- teszt -->
-        <!--
-        <audio id="audio-player">
-            <source src="../music/Azahriah_szosziazi.mp3" type="audio/mpeg">
-        </audio>
-        -->
-        
-        <script src="../js/down-arrow-animation.js"></script>
-        <!--<script src="../js/play-audio-test.js"></script>-->
-
-        <script src="../js/randomized-music-offers-setup.js"></script>
+    <script src="../js/down-arrow-animation.js"></script>
+    <script src="../js/randomized-music-offers-setup.js"></script>
         
         <?php
         include "login_operator.php";

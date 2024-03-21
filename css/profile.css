@@ -145,3 +145,31 @@ body {
 
 /* profile end */
 
+/* Responsive start */
+
+@media (max-width: 952px) { 
+
+
+    #profil-adatok-table {
+        width: 95%; 
+        margin: 20px auto; 
+    }
+
+    .signin-form-table-td {
+        padding: 10px; 
+    }
+}
+
+@media (max-width: 858px) { 
+
+    #profil-adatok-table {
+        width: 90%; 
+    }
+
+    .signin-form-table-td {
+        padding: 8px; 
+    }
+}
+
+/* Responsive end */
+

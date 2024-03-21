@@ -174,23 +174,6 @@ body {
     padding: 7px;
 }
 
-/*
-
-#input-text {
-    width: 98%;
-    resize: none;
-    height: 120px;
-    background-color: var(--input-textarea-color);
-    color: white;
-    border: none;
-    font-family: "BasisGrotesqueArabicPro-Regular";
-    font-size: 1em;
-    padding: 7px;
-}
-
-*/
-
-
 
 input[type="file"]::-webkit-file-upload-button{
    
@@ -294,5 +277,85 @@ input[type="date"] {
     color:black;
     cursor: pointer;
 }
+
+.required {
+    color: var(--green-color); 
+}
+
+
+
 /*signin end*/
 
+/* Responsive start */
+
+@media (max-width: 952px) {
+    #signin-form-table {
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+    .signin-form-table-td {
+        padding: 10px;
+    }
+
+    #mufaj-select, #bemutatkozo-szoveg, input[type="text"], input[type="password"], input[type="date"], input[type="file"], #reset-button, #regisztracio-button {
+        width: 90%; 
+    }
+
+    #signin-form-table-caption, .signin-form-table-tr, .signin-form-table-td, #info-icon {
+        font-size: 0.8em;
+    }
+
+    #regisztracio-button{
+        width: auto; 
+        padding: 12px 20px;
+    }
+
+    #reset-button {
+        padding: 4px 8px; 
+        font-size: 0.75em;
+    }
+
+    #belepes-kerdes-p, #goto-log-link {
+        font-size: 0.9em; 
+    }
+}
+
+@media (max-width: 858px) {
+    #signin-form-table {
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    .signin-form-table-td {
+        padding: 5px;
+    }
+
+    #mufaj-select, #bemutatkozo-szoveg, input[type="text"], input[type="password"], input[type="date"], input[type="file"], #reset-button, #regisztracio-button {
+        width: 100%; 
+    }
+
+    #signin-form-table-caption, .signin-form-table-tr, .signin-form-table-td, #info-icon {
+        font-size: 0.75em; 
+    }
+
+    #belepes-kerdes-p, #goto-log-link {
+        font-size: 0.9em; 
+    }
+    
+    #regisztracio-button {
+        width: auto; 
+        padding: 10px 15px; 
+    }
+
+    #reset-button {
+        padding: 3px 6px; 
+        font-size: 0.7em; 
+    }
+
+    #belepes-kerdes-p {
+        font-size: 0.8em; 
+    }
+}
+
+/* Responsive end */
