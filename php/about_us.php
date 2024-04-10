@@ -28,24 +28,22 @@
 </head>
 <body>
 
-  <header>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <div class="navbar-container">
-            <ul class="nav-links-left">
-            <li><a href="../index.php" class="nav-links">Főoldal</a></li>
-              <li><a class="nav-links disabled-link" id="music-id">Zenék</a></li>
-              <li><a class="nav-links disabled-link" id="forum-id">Fórum</a></li>
-            </ul>
-            <ul class="nav-links-right">
-              <li><a class="nav-links disabled-link">Rólunk</a></li>
-              <li><a href="login.php" class="nav-links" id="login-id">Jelentkezz be</a></li>
-              <li><a href="signin.php" class="nav-links" id="signin-id">Regisztrálj</a></li>
-            </ul>
-        </div>
+<header>
+
+  <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="main_page.php" class="nav-links">Főoldal</a></li>
+        <li><a class="nav-links disabled-link" id="music-id">Zenék</a></li>
+        <li><a class="nav-links disabled-link" id="forum-id">Fórum</a></li>
+        <span id="nav-span">
+        <li><a class="nav-links disabled-link">Rólunk</a></li>
+        <li><a href="login.php"class="nav-links" id="login-id">Jelentkezz be</a></li>
+        <li><a href="signin.php" class="nav-links" id="signin-id">Regisztrálj</a></li>
+      </ul>
     </nav>
 </header>
 
@@ -94,14 +92,15 @@
 
   </main>
 
-<?php
+
+  <?php
   include "login_operator.php";
   if(isset($_SESSION['session-user'])) {
       echo '<script>changeLinks()</script>';
       echo '<script>setToActiveLinks()</script>';
-  }
-?>
-  
+    }
+  ?>
+
 </body>
 
 </html>
