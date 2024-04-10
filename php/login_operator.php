@@ -43,7 +43,7 @@ if(isset($_POST['bejelentkezes-button'])) {
         exit();
     } else if($sikeres===TRUE) {
         //be van jelentkezve sikeresen
-        header("Location:./main_page.php"); 
+        header("Location: ../index.php"); 
     }
     
     

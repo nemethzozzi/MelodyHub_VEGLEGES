@@ -44,22 +44,25 @@
 <body>
 
 <header>
-<nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-        <li><a href="main_page.php" class="nav-links">Főoldal</a></li>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="navbar-container">
+                <ul class="nav-links-left">
+          <li><a href="../index.php" class="nav-links">Főoldal</a></li>
         <li><a class="nav-links disabled-link" id="music-id">Zenék</a></li>
         <li><a class="nav-links disabled-link" id="forum-id">Fórum</a></li>
-        <span id="nav-span">
-        <li><a class="nav-links disabled-link">Rólunk</a></li>
+        </ul>
+                <ul class="nav-links-right">
+        <li><a href="about_us.php" class="nav-links">Rólunk</a></li>
         <li><a href="login.php"class="nav-links disabled-link" id="login-id">Jelentkezz be</a></li>
         <li><a href="signin.php" class="nav-links" id="signin-id">Regisztrálj</a></li>
-      </ul>
-    </nav>
-</header>
+        </ul>
+            </div>
+        </nav>
+    </header>
 
 <h1 class="cim opacity-zero start-animation">
   MelodyHub
@@ -69,7 +72,7 @@
 </h2>
 
 <form action="login_operator.php" method="post" class="opacity-zero start-animation">
-  <table id="login-form-table">
+<table id="login-form-table">
     <caption id="login-form-table-caption">Bejelentkezés</caption>
     <tr class="login-form-table-tr">
       <td class="login-form-table-td">Felhasználónév:</td>
@@ -86,17 +89,18 @@
     </tr>
 
     <tr>
-      <td>
+      <td colspan="2" style="text-align:center;">
         <input type="submit" value="Bejelentkezés" id="bejelentkezes-button" name="bejelentkezes-button">
-      </td>
-      <td>
-        <p id="regisztracio-kerdes-p"> Még nem regisztáltál be?
-          <a href="signin.php" id="goto-reg-link">Regisztrálok</a>
-        </p>
       </td>
     </tr>
 
-
+    <tr>
+      <td colspan="2" style="text-align:center;">
+        <p id="regisztracio-kerdes-p">Még nem regisztáltál be?
+          <a href="signin.html" id="goto-reg-link">Regisztrálok</a>
+        </p>
+      </td>
+    </tr>
   </table>
 </form>
 

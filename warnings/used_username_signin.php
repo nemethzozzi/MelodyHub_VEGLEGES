@@ -31,10 +31,9 @@
       </div>
 
       <?php
-        include "login_operator.php";
-        session_start();
+        include "../php/login_operator.php";
         if(isset($_SESSION['session-user'])) {
-            header("Location:../php/main_page.php");
+            header("Location:../index.php");
         }
       ?>
     

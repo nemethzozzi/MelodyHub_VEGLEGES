@@ -185,53 +185,52 @@ body {
 }
 /* login end */
 
-/* For tablets */
-@media (max-width: 768px) {
+/* Responsive start */
+@media (max-width: 952px) {
     #login-form-table {
-        width: 80%; /* Adjust width for smaller screens */
-        font-size: 0.9em; /* Decrease font size for smaller screens */
+        width: 70%;
+        font-size: 1.2em; 
     }
 
     .login-form-table-tr {
-        display: block; /* Stack table rows vertically */
-        margin-bottom: 20px; /* Add spacing between rows */
+        display: block; 
+        margin-bottom: 20px;
     }
 
     .login-form-table-td {
-        width: 100%; /* Allow cells to take full width */
-        padding: 10px; /* Adjust padding for smaller screens */
-        text-align: center; /* Center-align table cells */
+        width: 100%;
+        padding: 10px;
     }
 
     #bejelentkezes-button {
-        width: 50%; /* Adjust button width */
+        width: 50%;
     }
 }
 
-/* For phones */
-@media (max-width: 480px) {
+@media (max-width: 858px) {
     #login-form-table {
-        width: 90%; /* Adjust width for even smaller screens */
-        font-size: 0.8em; /* Decrease font size for smaller screens */
+        width: 70%;
+        font-size: 0.8em;
     }
 
     #login-form-table-caption {
-        font-size: 1.2em; /* Increase font size for readability */
+        font-size: 1.2em;
     }
 
     .login-form-table-td {
-        padding: 8px; /* Adjust padding for smaller screens */
+        padding: 8px;
     }
 
     #bejelentkezes-button {
-        width: 70%; /* Adjust button width */
+        width: 70%;
     }
 
     #goto-reg-link {
-        font-size: 1em; /* Adjust font size */
+        font-size: 1em;
     }
 
     #regisztracio-kerdes-p {
-        font-size: 0.8em; /* Adjust font size */
+        font-size: 0.8em;
     }
 }
+/* Responsive end */

@@ -40,20 +40,23 @@ if (!isset($_SESSION)) {
 
 
 <header>
-<nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-        <li><a href="main_page.php" class="nav-links">Főoldal</a></li>
-        <li><a href="music.php"class="nav-links">Zenék</a></li>
-        <li><a class="nav-links disabled-link">Fórum</a></li>
-        <span id="nav-span">
-        <li><a href="about_us.php" class="nav-links">Rólunk</a></li>
-        <li><a href="login.php"class="nav-links" id="login-id">Jelentkezz be</a></li>
-        <li><a href="signin.php" class="nav-links" id="signin-id">Regisztrálj</a></li>
-      </ul>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+          <div class="navbar-container">
+            <ul class="nav-links-left">
+            <li><a href="../index.php" class="nav-links">Főoldal</a></li>
+              <li><a href="music.php"class="nav-links">Zenék</a></li>
+              <li><a class="nav-links disabled-link">Fórum</a></li>
+            </ul>
+            <ul class="nav-links-right">
+              <li><a href="about_us.php" class="nav-links">Rólunk</a></li>
+              <li><a href="login.php"class="nav-links" id="login-id">Jelentkezz be</a></li>
+              <li><a href="signin.php" class="nav-links" id="signin-id">Regisztrálj</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
 
@@ -98,21 +101,6 @@ if (!isset($_SESSION)) {
   
   </div>
 
-
-
-  <!-- valamiért a css nem működik -->
-  <script>
-    $(".liked-genres").css("font-family", "BasisGrotesqueArabicPro-Regular");
-    $(".liked-genres").css("color", "rgb(173, 173, 173)");
-
-        function clearPosts() {
-          setTimeOut(clear, 100);
-        }
-        function clear() {
-          $("#wrapper").empty();
-        }
-
-  </script>
 	
 </body> 
 
