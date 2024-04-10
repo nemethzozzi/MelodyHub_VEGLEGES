@@ -38,20 +38,23 @@ if (!isset($_SESSION)) {
 
 
 <header>
-<nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-        <li><a href="main_page.php" class="nav-links">Főoldal</a></li>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <div class="navbar-container">
+            <ul class="nav-links-left">
+        <li><a href="../index.php" class="nav-links">Főoldal</a></li>
         <li><a href="music.php"class="nav-links">Zenék</a></li>
         <li><a class="nav-links disabled-link">Fórum</a></li>
-        <span id="nav-span">
+        </ul>
+            <ul class="nav-links-right">
         <li><a href="about_us.php" class="nav-links">Rólunk</a></li>
         <li><a href="login.php"class="nav-links" id="login-id">Jelentkezz be</a></li>
         <li><a href="signin.php" class="nav-links" id="signin-id">Regisztrálj</a></li>
-      </ul>
+        </ul>
+        </div>
     </nav>
 </header>
 
