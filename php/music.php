@@ -1,5 +1,13 @@
+<?php
+session_start(); // Start the session at the very top
+include "login_operator.php";
+if (!isset($_SESSION['session-user'])) {
+    header("Location: ./main_page.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
-< lang="hu">
+<html lang="hu">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,19 +20,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <script src="../js/jquery-3.4.1.min.js"></script>
   <script>
-    function changeLinks() {
-        $("#login-id").attr("href", "profil_adatok.php");
-        $("#login-id").text("Profil");
-        $("#signin-id").attr("href", "logout.php");
-        $("#signin-id").text("Kijelentkezés");
-    }
-    function setToActiveLinks() {
-        $("#music-id").attr("href", "music.php");
-        $("#music-id").removeClass("disabled-link");
-        $("#forum-id").attr("href", "forum.php");
-        $("#forum-id").removeClass("disabled-link");
-    }
-  </script>
+        function changeLinks() {
+            $("#login-id").attr("href", "profil_adatok.php");
+            $("#login-id").text("Profil");
+            $("#signin-id").attr("href", "logout.php");
+            $("#signin-id").text("Kijelentkezés");
+        }
+        function setToActiveLinks() {
+            $("#music-id").attr("href", "music.php");
+            $("#music-id").removeClass("disabled-link");
+            $("#forum-id").attr("href", "forum.php");
+            $("#forum-id").removeClass("disabled-link");
+        }
+    </script>
 </head>
 <body>
 
@@ -71,6 +79,7 @@
       <option value="indie-folk">Indie folk</option>
     </select>
     <button id="genres-list-button" onclick="listMusic()">Listázás</button>
+
 </div>
 
 
@@ -80,15 +89,14 @@
 
     <script src="../js/music-setup.js"></script>
 
-    <?php
-        include "login_operator.php";
-        if(isset($_SESSION['session-user'])) {
-            echo '<script>changeLinks()</script>';
-            echo '<script>setToActiveLinks()</script>';
-        } else {
-          header("Location:./main_page.php");
-        }
-    ?>
-
 </body>
 </html>
+
+<?php
+  if(isset($_SESSION['session-user'])) {
+      echo '<script>changeLinks()</script>';
+      echo '<script>setToActiveLinks()</script>';
+  } else {
+    header("Location:./main_page.php");
+  }
+?>

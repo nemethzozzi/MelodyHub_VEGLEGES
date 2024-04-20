@@ -80,6 +80,24 @@ const musicSource = [
   },
 ];
 
+// fetch("../uploads/musicSourceForMainPage.json")
+//   .then((response) => {
+//     if (!response.ok) {
+//       throw new Error("Network response was not ok: " + response.statusText);
+//     }
+//     return response.json();
+//   })
+//   .then((data) => {
+//    console.log("Music data loaded:", data); //ellenőrzés hogy meghívodott e json
+//     musicSource = data;
+//     listMusic();
+//   })
+//   .catch((error) => {
+//     console.error("Error fetching music data:", error);
+//   });
+
+//Valamiért nem működik a fetchelés és csak tölt az oldal, ezért a manuális megoldás van it megvalósítva
+
 function getMusicSourceLength() {
   return musicSource.length - 1;
 }

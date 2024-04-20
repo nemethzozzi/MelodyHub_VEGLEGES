@@ -55,16 +55,6 @@ if(isset($_SESSION['session-user'])) {
 
 }
 
-/*
-$test_message = [
-    "liked-genres" => "pop, classical",
-    "message-author" => "test author",
-    "message-text" => "Ez egy teszt üzenet! Dummy szöveg: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur autem quas sunt veniam dignissimos itaque odit quia, dolores eligendi rerum velit saepe, quae dolor ipsum. Placeat accusantium nemo non tempora neque iste amet ullam voluptate, modi tenetur nostrum eveniet illo debitis odit veritatis ut ab officiis, illum, recusandae dolorem id veniam magnam! Officiis quisquam unde magni tempora vitae atque impedit optio a officia reiciendis enim sint reprehenderit deserunt dicta suscipit inventore, maiores repellat sequi."
-];
-
-$messages[]=$test_message;
-saveMessages($messages);
-*/
 
 
 

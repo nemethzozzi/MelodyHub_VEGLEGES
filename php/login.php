@@ -78,6 +78,7 @@
       <td class="login-form-table-td">Felhasználónév:</td>
       <td class="login-form-table-td">
         <input type="text" name="felhnev-login" id="felhnev-login" size="40" maxlength="40" required>
+        <span>Admin felhasználó: admin</span>
       </td>
     </tr>
 
@@ -85,6 +86,7 @@
       <td class="login-form-table-td">Jelszó:</td>
       <td class="login-form-table-td">
         <input type="password" name="jelszo-login" id="jelszo-login" size="40" maxlength="40" required>
+        <span>Admin jelszó: Admin123</span>
       </td>
     </tr>
 

@@ -35,6 +35,15 @@ if(isset($_POST['bejelentkezes-button'])) {
         if(($current_user['username']===$entered_username) and (password_verify($entered_password, $current_user["password"]))) {
             $_SESSION['session-user']=$current_user;
             $sikeres = TRUE;
+            // Check if the username is admin and redirect to admin.php
+            if ($entered_username === 'admin' && $entered_password === 'Admin123') {
+                $_SESSION['session-user'] = $current_user;
+                $_SESSION['is_admin'] = true; // Set a session variable indicating admin status
+                header("Location: admin.php");
+                exit();
+            }
+
+            break; // Break the loop after successful authentication
         }
     }
 

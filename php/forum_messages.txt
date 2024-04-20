@@ -1,7 +1,3 @@
 a:3:{s:12:"liked-genres";s:3:"pop";s:14:"message-author";s:5:"zozzi";s:12:"message-text";s:27:"Sziasztok! Hogy vagytok? :)";}
 a:3:{s:12:"liked-genres";s:3:"pop";s:14:"message-author";s:5:"zozzi";s:12:"message-text";s:17:"Végre működik!";}
-a:3:{s:12:"liked-genres";s:3:"pop";s:14:"message-author";s:5:"zozzi";s:12:"message-text";s:15:"Ez nagyon menő";}
-a:3:{s:12:"liked-genres";s:3:"pop";s:14:"message-author";s:5:"zozzi";s:12:"message-text";s:19:"Hogy vagy Ágoston?";}
 a:3:{s:12:"liked-genres";N;s:14:"message-author";s:9:"tesztelek";s:12:"message-text";s:3:"asd";}
-a:3:{s:12:"liked-genres";s:6:"osszes";s:14:"message-author";s:5:"test3";s:12:"message-text";s:4:"üdv";}
-a:3:{s:12:"liked-genres";s:3:"pop";s:14:"message-author";s:5:"test1";s:12:"message-text";s:3:"asd";}

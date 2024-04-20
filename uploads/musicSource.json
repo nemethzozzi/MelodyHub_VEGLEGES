@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "file": "../music/Azahriah_szosziazi.mp3",
+        "coverImage": "../images/azahriah.jpg",
+        "author": "Azariah",
+        "title": "szosziazi",
+        "genre": "pop",
+        "minute": 3,
+        "sec": 28
+    },
+    {
+        "id": 2,
+        "file": "../music/Tenno_Torii_Road.mp3",
+        "coverImage": "../images/tenno.jpg",
+        "author": "Tenno",
+        "title": "Torii Road",
+        "genre": "instrumental",
+        "minute": 2,
+        "sec": 9
+    },
+    {
+        "id": 3,
+        "file": "../music/Azahriah_FIGYELJ.mp3",
+        "coverImage": "../images/azahriah.jpg",
+        "author": "Azahriah",
+        "title": "FIGYELJ",
+        "genre": "pop",
+        "minute": 2,
+        "sec": 44
+    },
+    {
+        "id": 4,
+        "file": "../music/TDanny_BORDZSEKI_feat_VALMAR.mp3",
+        "coverImage": "../images/TDanny.jpg",
+        "author": "T. Danny",
+        "title": "B\u0150RDZSEKI (feat. VALMAR)",
+        "genre": "hiphop",
+        "minute": 2,
+        "sec": 42
+    },
+    {
+        "id": 5,
+        "file": "../music/Blackkeys_LonelyBoy.mp3",
+        "coverImage": "../images/Blackkeys.jpg",
+        "author": "The Black Keys",
+        "title": "Lonely Boy",
+        "genre": "rock",
+        "minute": 3,
+        "sec": 14
+    },
+    {
+        "id": 6,
+        "file": "../music/Rihanna_Umbrella.mp3",
+        "coverImage": "../images/Rihanna.jpg",
+        "author": "Rihanna",
+        "title": "Umbrella (feat JAY Z)",
+        "genre": "pop",
+        "minute": 4,
+        "sec": 20
+    },
+    {
+        "id": 7,
+        "file": "../music/Azahriah_FIGYELJ.mp3",
+        "coverImage": "../images/azahriah.jpg",
+        "author": "Azahriah",
+        "title": "FIGYELJ",
+        "genre": "pop",
+        "minute": 2,
+        "sec": 44
+    },
+    {
+        "id": 8,
+        "file": "../music/No_Resolve_Get_Me_Out.mp3",
+        "coverImage": "../images/no_resolve.jpeg",
+        "author": "No Resolve",
+        "title": "Get Me Out",
+        "genre": "rock",
+        "minute": 3,
+        "sec": 47
+    },
+    {
+        "id": 9,
+        "file": "../music/Adagio_in_G_Minor_Albinoni.mp3",
+        "coverImage": "../images/adagio.jpeg",
+        "author": "Adagio in G Minor",
+        "title": "Albinoni",
+        "genre": "classical",
+        "minute": 8,
+        "sec": 56
+    },
+    {
+        "id": 10,
+        "file": "../music/Kim_Dracula_Killdozer.mp3",
+        "coverImage": "../images/kim_dracula2.jpg",
+        "author": "Kim Dracula",
+        "title": "Killdozer",
+        "genre": "metal",
+        "minute": 2,
+        "sec": 31
+    },
+    {
+        "id": 11,
+        "file": "../music/Kim_Dracula_CLOSE_UR_EYES.mp3",
+        "coverImage": "../images/kim_dracula.jpg",
+        "author": "Kim Dracula",
+        "title": "1-800-CLOSE-UR-EYES",
+        "genre": "metal",
+        "minute": 2,
+        "sec": 13
+    }
+]

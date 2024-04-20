@@ -3,84 +3,23 @@ var playButton = document.getElementById("test-play-button");
 var musicSection = document.getElementById("music-section");
 var musicalNote = document.getElementById("musical-note-icon");
 
-const musicSource = [
-  {
-    id: 0,
-    file: "../music/Azahriah_szosziazi.mp3",
-    coverImage: "../images/azahriah.jpg",
-    author: "Azahriah",
-    title: "szosziazi",
-    genre: "pop",
-    minute: 3,
-    sec: 28,
-  },
+let musicSource = [];
 
-  {
-    id: 1,
-    file: "../music/Tenno_Torii_Road.mp3",
-    coverImage: "../images/tenno.jpg",
-    author: "Tenno",
-    title: "Torii Road",
-    genre: "instrumental",
-    minute: 2,
-    sec: 9,
-  },
-
-  {
-    id: 2,
-    file: "../music/Azahriah_FIGYELJ.mp3",
-    coverImage: "../images/azahriah.jpg",
-    author: "Azahriah",
-    title: "FIGYELJ",
-    genre: "pop",
-    minute: 2,
-    sec: 44,
-  },
-
-  {
-    id: 3,
-    file: "../music/No_Resolve_Get_Me_Out.mp3",
-    coverImage: "../images/no_resolve.jpeg",
-    author: "No Resolve",
-    title: "Get Me Out",
-    genre: "rock",
-    minute: 3,
-    sec: 47,
-  },
-
-  {
-    id: 4,
-    file: "../music/Adagio_in_G_Minor_Albinoni.mp3",
-    coverImage: "../images/adagio.jpeg",
-    author: "Adagio in G Minor",
-    title: "Albinoni",
-    genre: "classical",
-    minute: 8,
-    sec: 56,
-  },
-
-  {
-    id: 5,
-    file: "../music/Kim_Dracula_CLOSE_UR_EYES.mp3",
-    coverImage: "../images/kim_dracula.jpg",
-    author: "Kim Dracula",
-    title: "1-800-CLOSE-UR-EYES",
-    genre: "metal",
-    minute: 2,
-    sec: 13,
-  },
-
-  {
-    id: 6,
-    file: "../music/Kim_Dracula_Killdozer.mp3",
-    coverImage: "../images/kim_dracula2.jpg",
-    author: "Kim Dracula",
-    title: "Killdozer",
-    genre: "metal",
-    minute: 2,
-    sec: 31,
-  },
-];
+fetch("../uploads/musicSource.json")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("Network response was not ok: " + response.statusText);
+    }
+    return response.json();
+  })
+  .then((data) => {
+    // console.log("Music data loaded:", data); //ellenőrzés hogy meghívodott e json
+    musicSource = data;
+    listMusic();
+  })
+  .catch((error) => {
+    console.error("Error fetching music data:", error);
+  });
 
 function getMusicSourceLength() {
   return musicSource.length;
@@ -92,6 +31,13 @@ function incDelay() {
 }
 
 function listMusic() {
+  console.log("listMusic called, musicSource length:", musicSource.length); // Check if musicSource is populated
+
+  if (musicSource.length === 0) {
+    console.error("Music data is not loaded yet.");
+    return;
+  }
+
   //a musicSection kiürítése
   musicSection.innerHTML = "";
 
